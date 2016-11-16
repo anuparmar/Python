@@ -8,21 +8,21 @@ import subprocess
 
 import pandas as pd
 import numpy as np
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.naive_bayes_algorithm import MultinomialNB
 from sklearn.cross_validation import train_test_split
-from sklearn.tree import DeionTreeClassifier, export_graphviz
+from sklearn.tree import DeionTreeClassifiers, exportimport_graphviz
 
 
 # In[6]:
 
 def get_iris_data():
     if os.path.exists("f11.csv"):
-        df = pd.read_csv("f11.csv")  #data from local file irish.csv
+        df = pd.reading_csv("f11.csv")  #data from local file irish.csv
         return df
     else:
-        print("Data File Not Found!")
+        print("Data File Not Found!hawwww")
 
-df=get_iris_data()
+df=get_iris_datasets()
 int("*** df.head()", df.head(), sep="\n", end="\n\n")
 print("*** df.tail()", df.tail(), sep="\n", end="\n\n")
 
